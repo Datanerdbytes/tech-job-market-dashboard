@@ -28,6 +28,22 @@ Dash's built-in MCP server is enabled at `http://127.0.0.1:8050/_mcp`.
 | Companies & Locations | Company ranking toggle (postings / salary ceilings), consolidated locations |
 | Data Notes | Per-dataset provenance (generated SQL) + data caveats |
 
+## CI/CD
+
+`.github/workflows/ci.yml` runs on every push and PR: ruff lint (same focused
+rule set as the auto-ontology upstream) plus a production-mode smoke test that
+loads the app and asserts all four pages and assets return 200 — with debug
+and the MCP server disabled, exactly as they run in production.
+
+Deploys are GitHub-driven: connect the repo to Vercel once, then every push
+to `main` deploys production and every PR gets its own preview URL.
+
+1. Push the repo to GitHub (done — `github.com/Datanerdbytes/tech-job-market-dashboard`).
+2. In Vercel: **Add New → Project → Import** this repository.
+3. Set **Root Directory** to `dashboard` (the `vercel.json` there carries the
+   config). Framework Preset: Other.
+4. Deploy — subsequent pushes to `main` redeploy automatically.
+
 ## Deploy
 
 The app is read-only (snapshot JSONs committed to the repo, no secrets, no
