@@ -1,0 +1,21 @@
+job_title,work_arrangement,postings,postings_with_salary,postings_without_salary,avg_salary_min,avg_salary_max
+Engineering,Hybrid,19,3,16,103333.33333333333,220000.0
+Engineering,Onsite,13,1,12,120000.0,120000.0
+Engineering,Remote,71,4,67,132450.0,153745.0
+Engineering,Unknown,11,0,11,,
+Founding Engineer,Hybrid,30,7,23,137857.14285714287,197857.14285714287
+Founding Engineer,Onsite,47,12,35,138345.83333333334,185848.33333333334
+Founding Engineer,Remote,85,18,67,145555.55555555556,176388.88888888888
+Founding Engineer,Unknown,30,10,20,149000.0,190500.0
+Full Stack Engineer,Hybrid,24,7,17,122428.57142857143,178428.57142857142
+Full Stack Engineer,Onsite,21,1,20,230000.0,260000.0
+Full Stack Engineer,Remote,86,7,79,126428.57142857143,163571.42857142858
+Full Stack Engineer,Unknown,7,1,6,125000.0,125000.0
+Senior Software Engineer,Hybrid,104,19,85,147000.0,198842.1052631579
+Senior Software Engineer,Onsite,71,13,58,143538.46153846153,200000.0
+Senior Software Engineer,Remote,260,32,228,120437.5,160434.03125
+Senior Software Engineer,Unknown,26,3,23,133333.33333333334,180000.0
+Software Engineer,Hybrid,109,8,101,125875.0,220500.0
+Software Engineer,Onsite,98,10,88,130400.0,206900.0
+Software Engineer,Remote,252,30,222,111937.66666666667,162205.33333333334
+Software Engineer,Unknown,50,4,46,132500.0,190000.0

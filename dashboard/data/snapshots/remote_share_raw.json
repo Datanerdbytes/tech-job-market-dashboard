@@ -1,0 +1,19 @@
+{
+ "question": "What share of job postings are remote?",
+ "sql": "SELECT CAST(SUM(CASE WHEN remote_policy = 'remote' THEN 1 ELSE 0 END) AS NUMERIC) / NULLIF(COUNT(*), 0) AS remote_postings_share FROM tech_job_market.jobmarket.jobs;",
+ "rows": [
+  {
+   "remote_postings_share": 0.4749940105
+  }
+ ],
+ "updated_at": "2026-11-09T23:29:33+00:00",
+ "previous": {
+  "rows": [
+   {
+    "remote_postings_share": 0.4749940105
+   }
+  ],
+  "sql": "SELECT SUM(CASE WHEN remote_policy = 'remote' THEN 1 ELSE 0 END)::numeric / NULLIF(COUNT(*), 0) AS remote_postings_share FROM tech_job_market.jobmarket.jobs;",
+  "updated_at": "2026-11-10T03:00:00Z"
+ }
+}

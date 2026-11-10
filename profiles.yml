@@ -1,0 +1,13 @@
+tech_job_market:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      port: 5432
+      user: postgres
+      password: "{{ env_var('POSTGRES_PASSWORD') }}"
+      dbname: tech_job_market
+      schema: jobmarket
+      threads: 4
+      keepalives_idle: 240

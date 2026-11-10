@@ -1,0 +1,19 @@
+{
+ "question": "What is the jobs_with_salary value in the gold_salary_summary table?",
+ "sql": "SELECT jobs_with_salary FROM tech_job_market.jobmarket.gold_salary_summary;",
+ "rows": [
+  {
+   "jobs_with_salary": 2022
+  }
+ ],
+ "updated_at": "2026-11-09T23:02:48+00:00",
+ "previous": {
+  "rows": [
+   {
+    "count": 2997
+   }
+  ],
+  "sql": "SELECT COUNT(id) FROM tech_job_market.jobmarket.jobs WHERE salary_min IS NOT NULL OR salary_max IS NOT NULL",
+  "updated_at": "2026-11-09T22:59:21+00:00"
+ }
+}

@@ -1,0 +1,40 @@
+name: tech_job_market
+version: '1.0.0'
+config-version: 2
+
+profile: tech_job_market
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+# Model configurations by directory
+models:
+  tech_job_market:
+    staging:
+      +materialized: view
+      +tags: ["staging"]
+    silver:
+      +materialized: table
+      +tags: ["silver"]
+    gold:
+      +materialized: table
+      +tags: ["gold"]
+
+# Dispatch for dbt-mcp compatibility
+dispatch:
+  - macro_namespace: dbt
+    search_order: ["dbt.core", "dbt"]
+
+# Database and schema
+# These are overridden by the profile configuration
+# Profile should connect to: tech_job_market database, jobmarket schema
+# Host: localhost:5432 (Docker postgres-dev container)

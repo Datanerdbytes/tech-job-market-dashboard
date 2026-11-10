@@ -1,0 +1,47 @@
+{
+ "question": "Which 10 companies that report salary data have the highest average maximum salary?",
+ "sql": "SELECT company, avg_salary_max FROM tech_job_market.jobmarket.gold_jobs_by_company WHERE jobs_with_salary > 0 ORDER BY avg_salary_max DESC, company ASC LIMIT 10",
+ "rows": [
+  {
+   "company": "Meticulous",
+   "avg_salary_max": 900000.0
+  },
+  {
+   "company": "ALBERT",
+   "avg_salary_max": 750000.0
+  },
+  {
+   "company": "Primer",
+   "avg_salary_max": 700000.0
+  },
+  {
+   "company": "coreflow",
+   "avg_salary_max": 600000.0
+  },
+  {
+   "company": "Blitz.gg",
+   "avg_salary_max": 500000.0
+  },
+  {
+   "company": "Mechanize",
+   "avg_salary_max": 500000.0
+  },
+  {
+   "company": "Proprietary trading firm",
+   "avg_salary_max": 500000.0
+  },
+  {
+   "company": "SmarterDx",
+   "avg_salary_max": 500000.0
+  },
+  {
+   "company": "Streamplace",
+   "avg_salary_max": 500000.0
+  },
+  {
+   "company": "Y Combinator",
+   "avg_salary_max": 485000.0
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

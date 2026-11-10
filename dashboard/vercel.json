@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "includeFiles": "data/snapshots/*.json"
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "api/index.py" },
+    { "src": "/_dash-component-suites/(.*)", "dest": "api/index.py" },
+    { "src": "/(.*)", "dest": "api/index.py" }
+  ]
+}

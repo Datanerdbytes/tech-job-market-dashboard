@@ -1,0 +1,5317 @@
+{
+ "question": "Which pairs of skills most often appear together in the same job posting?",
+ "sql": "SELECT skill_a, skill_b, job_count FROM tech_job_market.jobmarket.gold_skill_cooccurrence ORDER BY job_count DESC;",
+ "rows": [
+  {
+   "skill_a": "react",
+   "skill_b": "typescript",
+   "job_count": 2661
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "react",
+   "job_count": 1804
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "react",
+   "job_count": 1793
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "python",
+   "job_count": 1455
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "react",
+   "job_count": 1321
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "typescript",
+   "job_count": 1261
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "typescript",
+   "job_count": 1226
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "react",
+   "job_count": 1105
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "ruby",
+   "job_count": 991
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "typescript",
+   "job_count": 967
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "react",
+   "job_count": 893
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "react",
+   "job_count": 843
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "typescript",
+   "job_count": 786
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "postgres",
+   "job_count": 754
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "python",
+   "job_count": 749
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "react",
+   "job_count": 742
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "terraform",
+   "job_count": 736
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "python",
+   "job_count": 727
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "docker",
+   "job_count": 716
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "node",
+   "job_count": 712
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "react",
+   "job_count": 683
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "python",
+   "job_count": 675
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "kubernetes",
+   "job_count": 670
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "python",
+   "job_count": 646
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "devops",
+   "job_count": 641
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "ruby",
+   "job_count": 628
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "react",
+   "job_count": 606
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "typescript",
+   "job_count": 595
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "python",
+   "job_count": 582
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "python",
+   "job_count": 580
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "typescript",
+   "job_count": 549
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "react",
+   "job_count": 538
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "kubernetes",
+   "job_count": 515
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "terraform",
+   "job_count": 509
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "react",
+   "job_count": 488
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "typescript",
+   "job_count": 487
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "terraform",
+   "job_count": 468
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "python",
+   "job_count": 445
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "python",
+   "job_count": 442
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "javascript",
+   "job_count": 424
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "kubernetes",
+   "job_count": 414
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "java",
+   "job_count": 407
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "sql",
+   "job_count": 406
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "postgres",
+   "job_count": 404
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "redis",
+   "job_count": 400
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "terraform",
+   "job_count": 399
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "node",
+   "job_count": 397
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "graphql",
+   "job_count": 395
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "typescript",
+   "job_count": 388
+  },
+  {
+   "skill_a": "terraform",
+   "skill_b": "typescript",
+   "job_count": 385
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "react",
+   "job_count": 375
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "ruby",
+   "job_count": 373
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "rails",
+   "job_count": 372
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "redis",
+   "job_count": 364
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "react",
+   "job_count": 362
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "typescript",
+   "job_count": 361
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "rust",
+   "job_count": 354
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "python",
+   "job_count": 350
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "terraform",
+   "job_count": 349
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "redis",
+   "job_count": 348
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "django",
+   "job_count": 331
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "terraform",
+   "job_count": 325
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "typescript",
+   "job_count": 318
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "docker",
+   "job_count": 311
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "rails",
+   "job_count": 304
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "postgres",
+   "job_count": 301
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "postgres",
+   "job_count": 295
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "typescript",
+   "job_count": 295
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "node",
+   "job_count": 293
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "gcp",
+   "job_count": 291
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "typescript",
+   "job_count": 286
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "redis",
+   "job_count": 275
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "postgres",
+   "job_count": 274
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "rust",
+   "job_count": 274
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "sql",
+   "job_count": 260
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "kubernetes",
+   "job_count": 258
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "sql",
+   "job_count": 257
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "vue",
+   "job_count": 255
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "python",
+   "job_count": 253
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "ruby",
+   "job_count": 252
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "node",
+   "job_count": 252
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "react",
+   "job_count": 252
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "react",
+   "job_count": 250
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "typescript",
+   "job_count": 249
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "react",
+   "job_count": 238
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "typescript",
+   "job_count": 235
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "python",
+   "job_count": 233
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "mysql",
+   "job_count": 232
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "typescript",
+   "job_count": 231
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "python",
+   "job_count": 231
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "terraform",
+   "job_count": 230
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "ruby",
+   "job_count": 229
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "postgres",
+   "job_count": 225
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "azure",
+   "job_count": 223
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "kubernetes",
+   "job_count": 220
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "kubernetes",
+   "job_count": 218
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "react",
+   "job_count": 218
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "golang",
+   "job_count": 218
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "typescript",
+   "job_count": 217
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "kafka",
+   "job_count": 216
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "swift",
+   "job_count": 216
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "python",
+   "job_count": 214
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "node",
+   "job_count": 212
+  },
+  {
+   "skill_a": "typescript",
+   "skill_b": "vue",
+   "job_count": 212
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "node",
+   "job_count": 210
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "redis",
+   "job_count": 206
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "vue",
+   "job_count": 205
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "kubernetes",
+   "job_count": 203
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "typescript",
+   "job_count": 201
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "javascript",
+   "job_count": 199
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "javascript",
+   "job_count": 199
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "redis",
+   "job_count": 198
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "typescript",
+   "job_count": 194
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "python",
+   "job_count": 191
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "python",
+   "job_count": 189
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "swift",
+   "job_count": 187
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "java",
+   "job_count": 187
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "postgres",
+   "job_count": 186
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "react",
+   "job_count": 184
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "vue",
+   "job_count": 183
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "pytorch",
+   "job_count": 181
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "kubernetes",
+   "job_count": 180
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "kotlin",
+   "job_count": 180
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "python",
+   "job_count": 178
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "java",
+   "job_count": 178
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "ruby",
+   "job_count": 174
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "javascript",
+   "job_count": 171
+  },
+  {
+   "skill_a": "sql",
+   "skill_b": "typescript",
+   "job_count": 170
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "kotlin",
+   "job_count": 170
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "kubernetes",
+   "job_count": 169
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "terraform",
+   "job_count": 169
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "rails",
+   "job_count": 165
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "spring",
+   "job_count": 163
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "mongodb",
+   "job_count": 163
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "react",
+   "job_count": 161
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "spark",
+   "job_count": 160
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "ruby",
+   "job_count": 159
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "python",
+   "job_count": 159
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "rust",
+   "job_count": 159
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "redis",
+   "job_count": 157
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "postgres",
+   "job_count": 156
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "postgres",
+   "job_count": 156
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "react",
+   "job_count": 155
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "react",
+   "job_count": 155
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "vue",
+   "job_count": 155
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "typescript",
+   "job_count": 155
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "typescript",
+   "job_count": 154
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "node",
+   "job_count": 153
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "redis",
+   "job_count": 152
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "python",
+   "job_count": 151
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "terraform",
+   "job_count": 151
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "react",
+   "job_count": 149
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "react",
+   "job_count": 147
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "rails",
+   "job_count": 146
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "ruby",
+   "job_count": 145
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "graphql",
+   "job_count": 144
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "gcp",
+   "job_count": 143
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "scala",
+   "job_count": 143
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "rails",
+   "job_count": 140
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "python",
+   "job_count": 140
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "sql",
+   "job_count": 139
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "react",
+   "job_count": 138
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "docker",
+   "job_count": 137
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "scala",
+   "job_count": 137
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "devops",
+   "job_count": 137
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "terraform",
+   "job_count": 135
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "ruby",
+   "job_count": 135
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "node",
+   "job_count": 134
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "typescript",
+   "job_count": 133
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "python",
+   "job_count": 132
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "scala",
+   "job_count": 132
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "rust",
+   "job_count": 131
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "javascript",
+   "job_count": 130
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "gcp",
+   "job_count": 130
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "postgres",
+   "job_count": 130
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "rails",
+   "job_count": 130
+  },
+  {
+   "skill_a": "swift",
+   "skill_b": "typescript",
+   "job_count": 129
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "terraform",
+   "job_count": 127
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "aws",
+   "job_count": 126
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "typescript",
+   "job_count": 126
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "typescript",
+   "job_count": 126
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "vue",
+   "job_count": 125
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "vue",
+   "job_count": 125
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "python",
+   "job_count": 125
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "gcp",
+   "job_count": 125
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "kubernetes",
+   "job_count": 123
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "ruby",
+   "job_count": 123
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "ruby",
+   "job_count": 121
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "python",
+   "job_count": 121
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "php",
+   "job_count": 121
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "python",
+   "job_count": 120
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "scala",
+   "job_count": 120
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "typescript",
+   "job_count": 119
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "rails",
+   "job_count": 119
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "spark",
+   "job_count": 117
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "sql",
+   "job_count": 116
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "vue",
+   "job_count": 115
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "tensorflow",
+   "job_count": 115
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "terraform",
+   "job_count": 114
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "golang",
+   "job_count": 113
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "swift",
+   "job_count": 112
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "redis",
+   "job_count": 112
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "redis",
+   "job_count": 111
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "php",
+   "job_count": 111
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "mysql",
+   "job_count": 110
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "swift",
+   "job_count": 110
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "docker",
+   "job_count": 110
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "sql",
+   "job_count": 110
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "javascript",
+   "job_count": 110
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "kubernetes",
+   "job_count": 110
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "flask",
+   "job_count": 109
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "golang",
+   "job_count": 109
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "python",
+   "job_count": 109
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "redis",
+   "job_count": 109
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "terraform",
+   "job_count": 108
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "rust",
+   "job_count": 108
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "kafka",
+   "job_count": 108
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "fastapi",
+   "job_count": 107
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "sql",
+   "job_count": 106
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "llm",
+   "job_count": 105
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "typescript",
+   "job_count": 105
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "rails",
+   "job_count": 105
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "kafka",
+   "job_count": 104
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "graphql",
+   "job_count": 104
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "php",
+   "job_count": 104
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "vue",
+   "job_count": 103
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "node",
+   "job_count": 103
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "mysql",
+   "job_count": 102
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "ruby",
+   "job_count": 102
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "node",
+   "job_count": 101
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "terraform",
+   "job_count": 101
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "postgres",
+   "job_count": 101
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "redis",
+   "job_count": 100
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "redis",
+   "job_count": 98
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "sql",
+   "job_count": 98
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "terraform",
+   "job_count": 97
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "postgres",
+   "job_count": 95
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "terraform",
+   "job_count": 95
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "sql",
+   "job_count": 94
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "python",
+   "job_count": 93
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "spring",
+   "job_count": 93
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "rails",
+   "job_count": 93
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "django",
+   "job_count": 91
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "rust",
+   "job_count": 90
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "vue",
+   "job_count": 90
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "mysql",
+   "job_count": 89
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "kubernetes",
+   "job_count": 89
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "terraform",
+   "job_count": 89
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "vue",
+   "job_count": 89
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "typescript",
+   "job_count": 88
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "mongodb",
+   "job_count": 88
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "sql",
+   "job_count": 88
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "scala",
+   "job_count": 87
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "java",
+   "job_count": 87
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "snowflake",
+   "job_count": 87
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "postgres",
+   "job_count": 86
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "redis",
+   "job_count": 85
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "spring",
+   "job_count": 85
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "vue",
+   "job_count": 84
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "snowflake",
+   "job_count": 84
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "vue",
+   "job_count": 83
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "kafka",
+   "job_count": 83
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "typescript",
+   "job_count": 83
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "rust",
+   "job_count": 82
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "terraform",
+   "job_count": 82
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "rust",
+   "job_count": 82
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "react",
+   "job_count": 82
+  },
+  {
+   "skill_a": "sql",
+   "skill_b": "terraform",
+   "job_count": 81
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "javascript",
+   "job_count": 81
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "pytorch",
+   "job_count": 80
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "javascript",
+   "job_count": 80
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "mysql",
+   "job_count": 79
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "ruby",
+   "job_count": 79
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "postgres",
+   "job_count": 79
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "aws",
+   "job_count": 79
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "snowflake",
+   "job_count": 78
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "javascript",
+   "job_count": 78
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "java",
+   "job_count": 77
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "rust",
+   "job_count": 77
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "react",
+   "job_count": 76
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "redis",
+   "job_count": 75
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "terraform",
+   "job_count": 75
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "graphql",
+   "job_count": 75
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "spark",
+   "job_count": 74
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "python",
+   "job_count": 74
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "swift",
+   "job_count": 74
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "redis",
+   "job_count": 73
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "typescript",
+   "job_count": 73
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "rust",
+   "job_count": 72
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "fastapi",
+   "job_count": 72
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "golang",
+   "job_count": 71
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "terraform",
+   "job_count": 71
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "react",
+   "job_count": 71
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "node",
+   "job_count": 70
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "spark",
+   "job_count": 70
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "vue",
+   "job_count": 70
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "docker",
+   "job_count": 70
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "kotlin",
+   "job_count": 70
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "react",
+   "job_count": 70
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "pytorch",
+   "job_count": 69
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "mysql",
+   "job_count": 69
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "sql",
+   "job_count": 69
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "flask",
+   "job_count": 68
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "react",
+   "job_count": 68
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "ruby",
+   "job_count": 67
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "terraform",
+   "job_count": 66
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "redis",
+   "job_count": 65
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "devops",
+   "job_count": 64
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "java",
+   "job_count": 64
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "postgres",
+   "job_count": 64
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "mongodb",
+   "job_count": 64
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "grpc",
+   "job_count": 63
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "ruby",
+   "job_count": 63
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "terraform",
+   "job_count": 63
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "swift",
+   "job_count": 62
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "rust",
+   "job_count": 62
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "node",
+   "job_count": 62
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "ruby",
+   "job_count": 61
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "vue",
+   "job_count": 61
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "spark",
+   "job_count": 61
+  },
+  {
+   "skill_a": "terraform",
+   "skill_b": "vue",
+   "job_count": 61
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "scala",
+   "job_count": 61
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "kotlin",
+   "job_count": 61
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "rust",
+   "job_count": 61
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "kotlin",
+   "job_count": 60
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "php",
+   "job_count": 60
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "flask",
+   "job_count": 59
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "vue",
+   "job_count": 59
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "tensorflow",
+   "job_count": 59
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "php",
+   "job_count": 59
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "sql",
+   "job_count": 59
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "php",
+   "job_count": 59
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "node",
+   "job_count": 59
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "node",
+   "job_count": 59
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "sql",
+   "job_count": 58
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "tensorflow",
+   "job_count": 58
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "kubernetes",
+   "job_count": 58
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "sql",
+   "job_count": 58
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "swift",
+   "job_count": 58
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "swift",
+   "job_count": 57
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "pandas",
+   "job_count": 56
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "postgres",
+   "job_count": 56
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "spark",
+   "job_count": 56
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "nlp",
+   "job_count": 56
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "kubernetes",
+   "job_count": 56
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "mysql",
+   "job_count": 56
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "kubernetes",
+   "job_count": 56
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "typescript",
+   "job_count": 56
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "vue",
+   "job_count": 56
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "vue",
+   "job_count": 55
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "kafka",
+   "job_count": 55
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "spark",
+   "job_count": 55
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "ruby",
+   "job_count": 54
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "kafka",
+   "job_count": 54
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "rails",
+   "job_count": 54
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "rails",
+   "job_count": 54
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "typescript",
+   "job_count": 54
+  },
+  {
+   "skill_a": "react",
+   "skill_b": "tensorflow",
+   "job_count": 54
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "postgres",
+   "job_count": 54
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "redis",
+   "job_count": 54
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "spark",
+   "job_count": 54
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "scala",
+   "job_count": 54
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "kotlin",
+   "job_count": 53
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "pytorch",
+   "job_count": 53
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "sql",
+   "job_count": 52
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "computer vision",
+   "job_count": 52
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "redis",
+   "job_count": 52
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "node",
+   "job_count": 52
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "node",
+   "job_count": 51
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "php",
+   "job_count": 51
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "java",
+   "job_count": 51
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "rails",
+   "job_count": 51
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "javascript",
+   "job_count": 51
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "graphql",
+   "job_count": 51
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "python",
+   "job_count": 51
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "postgres",
+   "job_count": 51
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "mongodb",
+   "job_count": 50
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "kotlin",
+   "job_count": 50
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "postgres",
+   "job_count": 50
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "rust",
+   "job_count": 50
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "mongodb",
+   "job_count": 50
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "mysql",
+   "job_count": 50
+  },
+  {
+   "skill_a": "sql",
+   "skill_b": "vue",
+   "job_count": 49
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "node",
+   "job_count": 49
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "java",
+   "job_count": 49
+  },
+  {
+   "skill_a": "spring",
+   "skill_b": "typescript",
+   "job_count": 49
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "vue",
+   "job_count": 49
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "terraform",
+   "job_count": 49
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "swift",
+   "job_count": 49
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "php",
+   "job_count": 48
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "kafka",
+   "job_count": 48
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "react",
+   "job_count": 48
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "azure",
+   "job_count": 47
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "tensorflow",
+   "job_count": 47
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "mysql",
+   "job_count": 46
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "graphql",
+   "job_count": 46
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "mysql",
+   "job_count": 45
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "postgres",
+   "job_count": 45
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "vue",
+   "job_count": 44
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "scala",
+   "job_count": 44
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "swift",
+   "job_count": 44
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "swift",
+   "job_count": 44
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "sql",
+   "job_count": 44
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "rust",
+   "job_count": 44
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "grpc",
+   "job_count": 44
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "docker",
+   "job_count": 43
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "javascript",
+   "job_count": 43
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "gcp",
+   "job_count": 43
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "typescript",
+   "job_count": 43
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "kubernetes",
+   "job_count": 43
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "vue",
+   "job_count": 43
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "llm",
+   "job_count": 42
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "rust",
+   "job_count": 42
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "django",
+   "job_count": 42
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "gcp",
+   "job_count": 42
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "spring",
+   "job_count": 42
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "rust",
+   "job_count": 42
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "scala",
+   "job_count": 42
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "rust",
+   "job_count": 41
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "terraform",
+   "job_count": 41
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "sql",
+   "job_count": 41
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "rails",
+   "job_count": 41
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "pandas",
+   "job_count": 41
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "kubernetes",
+   "job_count": 41
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "postgres",
+   "job_count": 41
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "terraform",
+   "job_count": 40
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "mongodb",
+   "job_count": 40
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "llm",
+   "job_count": 39
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "swift",
+   "job_count": 39
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "sql",
+   "job_count": 39
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "redis",
+   "job_count": 39
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "snowflake",
+   "job_count": 38
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "spring",
+   "job_count": 38
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "vue",
+   "job_count": 38
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "gcp",
+   "job_count": 38
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "terraform",
+   "job_count": 38
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "typescript",
+   "job_count": 37
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "ruby",
+   "job_count": 37
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "typescript",
+   "job_count": 37
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "kotlin",
+   "job_count": 37
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "spring",
+   "job_count": 37
+  },
+  {
+   "skill_a": "python",
+   "skill_b": "spring",
+   "job_count": 37
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "sql",
+   "job_count": 37
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "terraform",
+   "job_count": 36
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "rails",
+   "job_count": 36
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "sql",
+   "job_count": 36
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "tensorflow",
+   "job_count": 36
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "scala",
+   "job_count": 36
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "postgres",
+   "job_count": 36
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "vue",
+   "job_count": 35
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "redis",
+   "job_count": 35
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "python",
+   "job_count": 35
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "react",
+   "job_count": 35
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "mongodb",
+   "job_count": 35
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "typescript",
+   "job_count": 35
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "typescript",
+   "job_count": 35
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "spark",
+   "job_count": 35
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "scala",
+   "job_count": 35
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "rails",
+   "job_count": 35
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "kotlin",
+   "job_count": 34
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "spark",
+   "job_count": 34
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "ruby",
+   "job_count": 34
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "sql",
+   "job_count": 34
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "pytorch",
+   "job_count": 34
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "pytorch",
+   "job_count": 34
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "swift",
+   "job_count": 34
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "ruby",
+   "job_count": 34
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "mongodb",
+   "job_count": 34
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "swift",
+   "job_count": 34
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "sql",
+   "job_count": 33
+  },
+  {
+   "skill_a": "tensorflow",
+   "skill_b": "typescript",
+   "job_count": 33
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "rails",
+   "job_count": 33
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "llm",
+   "job_count": 33
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "sql",
+   "job_count": 33
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "pytorch",
+   "job_count": 33
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "scala",
+   "job_count": 32
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "scala",
+   "job_count": 32
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "numpy",
+   "job_count": 32
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "sql",
+   "job_count": 31
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "terraform",
+   "job_count": 31
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "scala",
+   "job_count": 31
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "ruby",
+   "job_count": 31
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "vue",
+   "job_count": 31
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "spring",
+   "job_count": 31
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "sql",
+   "job_count": 31
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "vue",
+   "job_count": 31
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "terraform",
+   "job_count": 31
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "flask",
+   "job_count": 31
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "sql",
+   "job_count": 31
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "grpc",
+   "job_count": 31
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "terraform",
+   "job_count": 31
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "snowflake",
+   "job_count": 30
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "node",
+   "job_count": 30
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "vue",
+   "job_count": 30
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "typescript",
+   "job_count": 30
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "kotlin",
+   "job_count": 30
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "swift",
+   "job_count": 30
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "sql",
+   "job_count": 30
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "pandas",
+   "job_count": 30
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "mongodb",
+   "job_count": 29
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "pytorch",
+   "job_count": 29
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "flask",
+   "job_count": 29
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "devops",
+   "job_count": 29
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "redis",
+   "job_count": 29
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "terraform",
+   "job_count": 29
+  },
+  {
+   "skill_a": "swift",
+   "skill_b": "vue",
+   "job_count": 29
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "kubernetes",
+   "job_count": 28
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "node",
+   "job_count": 28
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "mysql",
+   "job_count": 28
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "java",
+   "job_count": 28
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "rust",
+   "job_count": 28
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "snowflake",
+   "job_count": 28
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "rails",
+   "job_count": 28
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "mongodb",
+   "job_count": 28
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "swift",
+   "job_count": 28
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "pytorch",
+   "job_count": 27
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "php",
+   "job_count": 27
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "databricks",
+   "job_count": 27
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "kafka",
+   "job_count": 27
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "redis",
+   "job_count": 27
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "fastapi",
+   "job_count": 27
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "php",
+   "job_count": 27
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "ruby",
+   "job_count": 27
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "redis",
+   "job_count": 26
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "devops",
+   "job_count": 26
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "php",
+   "job_count": 26
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "snowflake",
+   "job_count": 26
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "pandas",
+   "job_count": 26
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "kafka",
+   "job_count": 26
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "sql",
+   "job_count": 26
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "spring",
+   "job_count": 26
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "kafka",
+   "job_count": 26
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "django",
+   "job_count": 26
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "llm",
+   "job_count": 26
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "fastapi",
+   "job_count": 26
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "pytorch",
+   "job_count": 26
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "gcp",
+   "job_count": 25
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "gcp",
+   "job_count": 25
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "nlp",
+   "job_count": 25
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "pandas",
+   "job_count": 25
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "rust",
+   "job_count": 25
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "php",
+   "job_count": 25
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "llm",
+   "job_count": 25
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "typescript",
+   "job_count": 25
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "node",
+   "job_count": 25
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "rails",
+   "job_count": 25
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "graphql",
+   "job_count": 25
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "graphql",
+   "job_count": 25
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "rails",
+   "job_count": 24
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "kafka",
+   "job_count": 24
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "postgres",
+   "job_count": 24
+  },
+  {
+   "skill_a": "swift",
+   "skill_b": "terraform",
+   "job_count": 24
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "mongodb",
+   "job_count": 24
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "mysql",
+   "job_count": 24
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "sql",
+   "job_count": 24
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "terraform",
+   "job_count": 24
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "numpy",
+   "job_count": 24
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "spring",
+   "job_count": 24
+  },
+  {
+   "skill_a": "spring",
+   "skill_b": "terraform",
+   "job_count": 24
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "java",
+   "job_count": 24
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "spring",
+   "job_count": 24
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "llm",
+   "job_count": 23
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "swift",
+   "job_count": 23
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "spark",
+   "job_count": 23
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "redis",
+   "job_count": 23
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "spark",
+   "job_count": 23
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "redis",
+   "job_count": 23
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "node",
+   "job_count": 23
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "mysql",
+   "job_count": 23
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "typescript",
+   "job_count": 23
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "spring",
+   "job_count": 23
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "tensorflow",
+   "job_count": 23
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "rust",
+   "job_count": 22
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "tensorflow",
+   "job_count": 22
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "llm",
+   "job_count": 22
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "mysql",
+   "job_count": 22
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "scala",
+   "job_count": 22
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "snowflake",
+   "job_count": 22
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "mongodb",
+   "job_count": 22
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "c++",
+   "job_count": 22
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "rust",
+   "job_count": 21
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "sql",
+   "job_count": 21
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "rust",
+   "job_count": 21
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "scala",
+   "job_count": 21
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "rust",
+   "job_count": 21
+  },
+  {
+   "skill_a": "spring",
+   "skill_b": "sql",
+   "job_count": 21
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "nlp",
+   "job_count": 21
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "spark",
+   "job_count": 21
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "nlp",
+   "job_count": 21
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "terraform",
+   "job_count": 21
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "snowflake",
+   "job_count": 21
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "sql",
+   "job_count": 21
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "php",
+   "job_count": 21
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "mongodb",
+   "job_count": 21
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "docker",
+   "job_count": 21
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "django",
+   "job_count": 21
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "tensorflow",
+   "job_count": 20
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "mongodb",
+   "job_count": 20
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "terraform",
+   "job_count": 20
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "spark",
+   "job_count": 20
+  },
+  {
+   "skill_a": "kubernetes",
+   "skill_b": "numpy",
+   "job_count": 20
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "snowflake",
+   "job_count": 20
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "pytorch",
+   "job_count": 20
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "postgres",
+   "job_count": 19
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "mongodb",
+   "job_count": 19
+  },
+  {
+   "skill_a": "sql",
+   "skill_b": "swift",
+   "job_count": 19
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "scala",
+   "job_count": 19
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "pytorch",
+   "job_count": 19
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "swift",
+   "job_count": 19
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "spark",
+   "job_count": 19
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "grpc",
+   "job_count": 19
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "react",
+   "job_count": 19
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "spring",
+   "job_count": 19
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "golang",
+   "job_count": 19
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "node",
+   "job_count": 19
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "postgres",
+   "job_count": 18
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "scala",
+   "job_count": 18
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "snowflake",
+   "job_count": 18
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "mysql",
+   "job_count": 18
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "swift",
+   "job_count": 18
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "numpy",
+   "job_count": 18
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "spring",
+   "job_count": 18
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "kafka",
+   "job_count": 18
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "spark",
+   "job_count": 18
+  },
+  {
+   "skill_a": "tensorflow",
+   "skill_b": "terraform",
+   "job_count": 18
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "spark",
+   "job_count": 17
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "node",
+   "job_count": 17
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "fastapi",
+   "job_count": 17
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "javascript",
+   "job_count": 17
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "nlp",
+   "job_count": 17
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "grpc",
+   "job_count": 17
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "spring",
+   "job_count": 17
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "tensorflow",
+   "job_count": 17
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "spark",
+   "job_count": 17
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "python",
+   "job_count": 17
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "pandas",
+   "job_count": 17
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "vue",
+   "job_count": 17
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "java",
+   "job_count": 16
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "tensorflow",
+   "job_count": 16
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "sql",
+   "job_count": 16
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "pytorch",
+   "job_count": 16
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "sql",
+   "job_count": 16
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "flask",
+   "job_count": 16
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "mysql",
+   "job_count": 16
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "redis",
+   "job_count": 16
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "spark",
+   "job_count": 16
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "pandas",
+   "job_count": 16
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "nlp",
+   "job_count": 16
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "grpc",
+   "job_count": 16
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "snowflake",
+   "job_count": 16
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "rails",
+   "job_count": 16
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "pandas",
+   "job_count": 16
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "python",
+   "job_count": 15
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "graphql",
+   "job_count": 15
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "swift",
+   "job_count": 15
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "php",
+   "job_count": 15
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "snowflake",
+   "job_count": 15
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "scala",
+   "job_count": 15
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "pytorch",
+   "job_count": 15
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "scala",
+   "job_count": 15
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "rust",
+   "job_count": 15
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "scala",
+   "job_count": 15
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "rust",
+   "job_count": 15
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "terraform",
+   "job_count": 15
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "snowflake",
+   "job_count": 15
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "swift",
+   "job_count": 15
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "rails",
+   "job_count": 14
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "php",
+   "job_count": 14
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "spark",
+   "job_count": 14
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "sql",
+   "job_count": 14
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "pandas",
+   "job_count": 14
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "ruby",
+   "job_count": 14
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "pandas",
+   "job_count": 14
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "azure",
+   "job_count": 14
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "redis",
+   "job_count": 14
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "php",
+   "job_count": 14
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "tensorflow",
+   "job_count": 14
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "pytorch",
+   "job_count": 14
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "fastapi",
+   "job_count": 14
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "pytorch",
+   "job_count": 14
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "rust",
+   "job_count": 14
+  },
+  {
+   "skill_a": "aws",
+   "skill_b": "hadoop",
+   "job_count": 14
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "kotlin",
+   "job_count": 14
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "postgres",
+   "job_count": 14
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "kotlin",
+   "job_count": 14
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "swift",
+   "job_count": 14
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "pandas",
+   "job_count": 13
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "rust",
+   "job_count": 13
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "snowflake",
+   "job_count": 13
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "snowflake",
+   "job_count": 13
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "tensorflow",
+   "job_count": 13
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "ruby",
+   "job_count": 13
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "tensorflow",
+   "job_count": 13
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "spring",
+   "job_count": 13
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "kafka",
+   "job_count": 13
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "pytorch",
+   "job_count": 13
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "golang",
+   "job_count": 13
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "nlp",
+   "job_count": 13
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "spring",
+   "job_count": 13
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "vue",
+   "job_count": 12
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "kafka",
+   "job_count": 12
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "nlp",
+   "job_count": 12
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "numpy",
+   "job_count": 12
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "spark",
+   "job_count": 12
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "swift",
+   "job_count": 12
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "java",
+   "job_count": 12
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "databricks",
+   "job_count": 12
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "mongodb",
+   "job_count": 12
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "llm",
+   "job_count": 12
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "llm",
+   "job_count": 12
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "llm",
+   "job_count": 12
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "snowflake",
+   "job_count": 12
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "vue",
+   "job_count": 12
+  },
+  {
+   "skill_a": "postgres",
+   "skill_b": "tensorflow",
+   "job_count": 12
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "nlp",
+   "job_count": 12
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "tensorflow",
+   "job_count": 12
+  },
+  {
+   "skill_a": "javascript",
+   "skill_b": "numpy",
+   "job_count": 12
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "numpy",
+   "job_count": 12
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "postgres",
+   "job_count": 11
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "numpy",
+   "job_count": 11
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "fastapi",
+   "job_count": 11
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "spark",
+   "job_count": 11
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "php",
+   "job_count": 11
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "docker",
+   "job_count": 11
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "rust",
+   "job_count": 11
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "tensorflow",
+   "job_count": 11
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "golang",
+   "job_count": 11
+  },
+  {
+   "skill_a": "sql",
+   "skill_b": "tensorflow",
+   "job_count": 11
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "vue",
+   "job_count": 11
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "spring",
+   "job_count": 11
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "ruby",
+   "job_count": 11
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "snowflake",
+   "job_count": 11
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "vue",
+   "job_count": 11
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "sql",
+   "job_count": 11
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "ruby",
+   "job_count": 11
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "rails",
+   "job_count": 11
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "flask",
+   "job_count": 11
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "spring",
+   "job_count": 11
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "tensorflow",
+   "job_count": 11
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "scala",
+   "job_count": 11
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "vue",
+   "job_count": 11
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "snowflake",
+   "job_count": 11
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "node",
+   "job_count": 11
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "kafka",
+   "job_count": 11
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "vue",
+   "job_count": 11
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "scala",
+   "job_count": 11
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "scala",
+   "job_count": 10
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "swift",
+   "job_count": 10
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "django",
+   "job_count": 10
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "gcp",
+   "job_count": 10
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "spark",
+   "job_count": 10
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "redis",
+   "job_count": 10
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "swift",
+   "job_count": 10
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "javascript",
+   "job_count": 10
+  },
+  {
+   "skill_a": "spring",
+   "skill_b": "vue",
+   "job_count": 10
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "docker",
+   "job_count": 10
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "graphql",
+   "job_count": 10
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "rust",
+   "job_count": 10
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "terraform",
+   "job_count": 10
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "snowflake",
+   "job_count": 10
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "spring",
+   "job_count": 10
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "angular",
+   "job_count": 10
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "tensorflow",
+   "job_count": 10
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "nlp",
+   "job_count": 10
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "tensorflow",
+   "job_count": 10
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "mysql",
+   "job_count": 10
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "spark",
+   "job_count": 10
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "vue",
+   "job_count": 9
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "spark",
+   "job_count": 9
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "vue",
+   "job_count": 9
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "mongodb",
+   "job_count": 9
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "javascript",
+   "job_count": 9
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "pytorch",
+   "job_count": 9
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "tensorflow",
+   "job_count": 9
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "spark",
+   "job_count": 9
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "pytorch",
+   "job_count": 9
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "rust",
+   "job_count": 9
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "spring",
+   "job_count": 9
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "pandas",
+   "job_count": 9
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "tensorflow",
+   "job_count": 9
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "golang",
+   "job_count": 9
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "spark",
+   "job_count": 9
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "tensorflow",
+   "job_count": 9
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "rails",
+   "job_count": 9
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "llm",
+   "job_count": 9
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "scala",
+   "job_count": 9
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "swift",
+   "job_count": 9
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "tensorflow",
+   "job_count": 9
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "devops",
+   "job_count": 9
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "mysql",
+   "job_count": 9
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "snowflake",
+   "job_count": 8
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "kubernetes",
+   "job_count": 8
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "pytorch",
+   "job_count": 8
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "tensorflow",
+   "job_count": 8
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "tensorflow",
+   "job_count": 8
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "pytorch",
+   "job_count": 8
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "pandas",
+   "job_count": 8
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "mongodb",
+   "job_count": 8
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "spark",
+   "job_count": 8
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "nlp",
+   "job_count": 8
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "spring",
+   "job_count": 8
+  },
+  {
+   "skill_a": "docker",
+   "skill_b": "hadoop",
+   "job_count": 8
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "snowflake",
+   "job_count": 8
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "scala",
+   "job_count": 8
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "spark",
+   "job_count": 8
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "terraform",
+   "job_count": 8
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "terraform",
+   "job_count": 8
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "sql",
+   "job_count": 8
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "sql",
+   "job_count": 8
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "terraform",
+   "job_count": 8
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "kubernetes",
+   "job_count": 8
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "spark",
+   "job_count": 8
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "kafka",
+   "job_count": 8
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "fastapi",
+   "job_count": 8
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "flask",
+   "job_count": 8
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "spark",
+   "job_count": 8
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "swift",
+   "job_count": 8
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "scala",
+   "job_count": 8
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "graphql",
+   "job_count": 8
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "golang",
+   "job_count": 8
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "grpc",
+   "job_count": 7
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "spark",
+   "job_count": 7
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "javascript",
+   "job_count": 7
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "react",
+   "job_count": 7
+  },
+  {
+   "skill_a": "rust",
+   "skill_b": "spring",
+   "job_count": 7
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "rails",
+   "job_count": 7
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "swift",
+   "job_count": 7
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "ruby",
+   "job_count": 7
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "sql",
+   "job_count": 7
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "tensorflow",
+   "job_count": 7
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "spring",
+   "job_count": 7
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "pytorch",
+   "job_count": 7
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "kotlin",
+   "job_count": 7
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "numpy",
+   "job_count": 7
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "mongodb",
+   "job_count": 7
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "pandas",
+   "job_count": 7
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "numpy",
+   "job_count": 7
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "sql",
+   "job_count": 7
+  },
+  {
+   "skill_a": "rails",
+   "skill_b": "spark",
+   "job_count": 7
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "llm",
+   "job_count": 7
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "snowflake",
+   "job_count": 7
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "scala",
+   "job_count": 7
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "hadoop",
+   "job_count": 7
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "nlp",
+   "job_count": 6
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "numpy",
+   "job_count": 6
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "pandas",
+   "job_count": 6
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "scala",
+   "job_count": 6
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "snowflake",
+   "job_count": 6
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "llm",
+   "job_count": 6
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "pandas",
+   "job_count": 6
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "typescript",
+   "job_count": 6
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "numpy",
+   "job_count": 6
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "scala",
+   "job_count": 6
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "pytorch",
+   "job_count": 6
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "react",
+   "job_count": 6
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "grpc",
+   "job_count": 6
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "snowflake",
+   "job_count": 6
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "spark",
+   "job_count": 6
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "tensorflow",
+   "job_count": 6
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "redis",
+   "job_count": 6
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "llm",
+   "job_count": 6
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "sql",
+   "job_count": 6
+  },
+  {
+   "skill_a": "java",
+   "skill_b": "numpy",
+   "job_count": 6
+  },
+  {
+   "skill_a": "ruby",
+   "skill_b": "tensorflow",
+   "job_count": 6
+  },
+  {
+   "skill_a": "swift",
+   "skill_b": "tensorflow",
+   "job_count": 6
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "pandas",
+   "job_count": 6
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "java",
+   "job_count": 6
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "numpy",
+   "job_count": 6
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "kotlin",
+   "job_count": 6
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "terraform",
+   "job_count": 6
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "grpc",
+   "job_count": 6
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "pandas",
+   "job_count": 6
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "scala",
+   "job_count": 5
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "redis",
+   "job_count": 5
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "mongodb",
+   "job_count": 5
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "vue",
+   "job_count": 5
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "rust",
+   "job_count": 5
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "vue",
+   "job_count": 5
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "rust",
+   "job_count": 5
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "pandas",
+   "job_count": 5
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "tensorflow",
+   "job_count": 5
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "snowflake",
+   "job_count": 5
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "vue",
+   "job_count": 5
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "scala",
+   "job_count": 5
+  },
+  {
+   "skill_a": "devops",
+   "skill_b": "numpy",
+   "job_count": 5
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "redis",
+   "job_count": 5
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "mysql",
+   "job_count": 5
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "kafka",
+   "job_count": 5
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "snowflake",
+   "job_count": 5
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "spark",
+   "job_count": 5
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "pytorch",
+   "job_count": 5
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "nlp",
+   "job_count": 5
+  },
+  {
+   "skill_a": "node",
+   "skill_b": "numpy",
+   "job_count": 5
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "rust",
+   "job_count": 5
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "php",
+   "job_count": 5
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "ruby",
+   "job_count": 5
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "rust",
+   "job_count": 5
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "swift",
+   "job_count": 5
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "computer vision",
+   "job_count": 5
+  },
+  {
+   "skill_a": "scala",
+   "skill_b": "vue",
+   "job_count": 5
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "redis",
+   "job_count": 5
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "tensorflow",
+   "job_count": 5
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "snowflake",
+   "job_count": 5
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "mysql",
+   "job_count": 5
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "snowflake",
+   "job_count": 5
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "llm",
+   "job_count": 5
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "tensorflow",
+   "job_count": 5
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "php",
+   "job_count": 5
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "nlp",
+   "job_count": 5
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "spark",
+   "job_count": 5
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "spring",
+   "job_count": 5
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "java",
+   "job_count": 5
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "snowflake",
+   "job_count": 5
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "javascript",
+   "job_count": 4
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "node",
+   "job_count": 4
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "vue",
+   "job_count": 4
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "nlp",
+   "job_count": 4
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "mysql",
+   "job_count": 4
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "php",
+   "job_count": 4
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "rails",
+   "job_count": 4
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "php",
+   "job_count": 4
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "django",
+   "job_count": 4
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "swift",
+   "job_count": 4
+  },
+  {
+   "skill_a": "graphql",
+   "skill_b": "numpy",
+   "job_count": 4
+  },
+  {
+   "skill_a": "spark",
+   "skill_b": "swift",
+   "job_count": 4
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "swift",
+   "job_count": 4
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "mysql",
+   "job_count": 4
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "nlp",
+   "job_count": 4
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "llm",
+   "job_count": 4
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "pandas",
+   "job_count": 4
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "scala",
+   "job_count": 4
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "typescript",
+   "job_count": 4
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "javascript",
+   "job_count": 4
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "spring",
+   "job_count": 4
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "computer vision",
+   "job_count": 4
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "php",
+   "job_count": 4
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "pandas",
+   "job_count": 4
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "nlp",
+   "job_count": 4
+  },
+  {
+   "skill_a": "mongodb",
+   "skill_b": "spark",
+   "job_count": 4
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "grpc",
+   "job_count": 4
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "llm",
+   "job_count": 4
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "databricks",
+   "job_count": 4
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "pandas",
+   "job_count": 3
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "ruby",
+   "job_count": 3
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "tensorflow",
+   "job_count": 3
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "postgres",
+   "job_count": 3
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "pandas",
+   "job_count": 3
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "scala",
+   "job_count": 3
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "swift",
+   "job_count": 3
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "scala",
+   "job_count": 3
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "hadoop",
+   "job_count": 3
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "kafka",
+   "job_count": 3
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "numpy",
+   "job_count": 3
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "spring",
+   "job_count": 3
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "fastapi",
+   "job_count": 3
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "tensorflow",
+   "job_count": 3
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "kotlin",
+   "job_count": 3
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "snowflake",
+   "job_count": 3
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "grpc",
+   "job_count": 3
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "graphql",
+   "job_count": 3
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "scala",
+   "job_count": 3
+  },
+  {
+   "skill_a": "gcp",
+   "skill_b": "hadoop",
+   "job_count": 3
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "java",
+   "job_count": 3
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "numpy",
+   "job_count": 3
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "c++",
+   "job_count": 3
+  },
+  {
+   "skill_a": "redis",
+   "skill_b": "snowflake",
+   "job_count": 3
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "nlp",
+   "job_count": 3
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "spark",
+   "job_count": 3
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "computer vision",
+   "job_count": 3
+  },
+  {
+   "skill_a": "tensorflow",
+   "skill_b": "vue",
+   "job_count": 3
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "kotlin",
+   "job_count": 3
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "mysql",
+   "job_count": 3
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "node",
+   "job_count": 3
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "postgres",
+   "job_count": 3
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "grpc",
+   "job_count": 3
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "spark",
+   "job_count": 3
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "nlp",
+   "job_count": 3
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "numpy",
+   "job_count": 2
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "pandas",
+   "job_count": 2
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "tensorflow",
+   "job_count": 2
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "spring",
+   "job_count": 2
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "numpy",
+   "job_count": 2
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "spring",
+   "job_count": 2
+  },
+  {
+   "skill_a": "llm",
+   "skill_b": "php",
+   "job_count": 2
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "rails",
+   "job_count": 2
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "php",
+   "job_count": 2
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "pytorch",
+   "job_count": 2
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "tensorflow",
+   "job_count": 2
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "rails",
+   "job_count": 2
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "snowflake",
+   "job_count": 2
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "snowflake",
+   "job_count": 2
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "redis",
+   "job_count": 2
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "rails",
+   "job_count": 2
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "rust",
+   "job_count": 2
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "grpc",
+   "job_count": 2
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "computer vision",
+   "job_count": 2
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "kotlin",
+   "job_count": 2
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "snowflake",
+   "job_count": 2
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "gcp",
+   "job_count": 2
+  },
+  {
+   "skill_a": "spring",
+   "skill_b": "swift",
+   "job_count": 2
+  },
+  {
+   "skill_a": "spring",
+   "skill_b": "tensorflow",
+   "job_count": 2
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "pytorch",
+   "job_count": 2
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "php",
+   "job_count": 2
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "spring",
+   "job_count": 2
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "ruby",
+   "job_count": 2
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "php",
+   "job_count": 2
+  },
+  {
+   "skill_a": "kafka",
+   "skill_b": "nlp",
+   "job_count": 2
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "graphql",
+   "job_count": 2
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "javascript",
+   "job_count": 2
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "ruby",
+   "job_count": 2
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "swift",
+   "job_count": 2
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "databricks",
+   "job_count": 2
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "numpy",
+   "job_count": 2
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "pytorch",
+   "job_count": 2
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "redis",
+   "job_count": 2
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "flask",
+   "job_count": 2
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "ruby",
+   "job_count": 2
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "llm",
+   "job_count": 2
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "nlp",
+   "job_count": 2
+  },
+  {
+   "skill_a": "azure",
+   "skill_b": "hadoop",
+   "job_count": 2
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "rust",
+   "job_count": 1
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "vue",
+   "job_count": 1
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "spring",
+   "job_count": 1
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "tensorflow",
+   "job_count": 1
+  },
+  {
+   "skill_a": "mysql",
+   "skill_b": "numpy",
+   "job_count": 1
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "scala",
+   "job_count": 1
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "spring",
+   "job_count": 1
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "flask",
+   "job_count": 1
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "golang",
+   "job_count": 1
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "java",
+   "job_count": 1
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "rails",
+   "job_count": 1
+  },
+  {
+   "skill_a": "php",
+   "skill_b": "pytorch",
+   "job_count": 1
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "ruby",
+   "job_count": 1
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "hadoop",
+   "job_count": 1
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "hadoop",
+   "job_count": 1
+  },
+  {
+   "skill_a": "flask",
+   "skill_b": "golang",
+   "job_count": 1
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "swift",
+   "job_count": 1
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "mongodb",
+   "job_count": 1
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "snowflake",
+   "job_count": 1
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "java",
+   "job_count": 1
+  },
+  {
+   "skill_a": "angular",
+   "skill_b": "c++",
+   "job_count": 1
+  },
+  {
+   "skill_a": "grpc",
+   "skill_b": "tensorflow",
+   "job_count": 1
+  },
+  {
+   "skill_a": "pandas",
+   "skill_b": "php",
+   "job_count": 1
+  },
+  {
+   "skill_a": "django",
+   "skill_b": "hadoop",
+   "job_count": 1
+  },
+  {
+   "skill_a": "numpy",
+   "skill_b": "snowflake",
+   "job_count": 1
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "llm",
+   "job_count": 1
+  },
+  {
+   "skill_a": "snowflake",
+   "skill_b": "spring",
+   "job_count": 1
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "mongodb",
+   "job_count": 1
+  },
+  {
+   "skill_a": "fastapi",
+   "skill_b": "spring",
+   "job_count": 1
+  },
+  {
+   "skill_a": "airflow",
+   "skill_b": "kotlin",
+   "job_count": 1
+  },
+  {
+   "skill_a": "nlp",
+   "skill_b": "snowflake",
+   "job_count": 1
+  },
+  {
+   "skill_a": "databricks",
+   "skill_b": "tensorflow",
+   "job_count": 1
+  },
+  {
+   "skill_a": "hadoop",
+   "skill_b": "spring",
+   "job_count": 1
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "devops",
+   "job_count": 1
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "numpy",
+   "job_count": 1
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "mysql",
+   "job_count": 1
+  },
+  {
+   "skill_a": "c++",
+   "skill_b": "numpy",
+   "job_count": 1
+  },
+  {
+   "skill_a": "pytorch",
+   "skill_b": "swift",
+   "job_count": 1
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "pandas",
+   "job_count": 1
+  },
+  {
+   "skill_a": "golang",
+   "skill_b": "hadoop",
+   "job_count": 1
+  },
+  {
+   "skill_a": "kotlin",
+   "skill_b": "nlp",
+   "job_count": 1
+  },
+  {
+   "skill_a": "computer vision",
+   "skill_b": "databricks",
+   "job_count": 1
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

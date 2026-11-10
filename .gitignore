@@ -1,0 +1,34 @@
+# local venv for the chart build script
+.venv-chart/
+
+# python cache
+__pycache__/
+*.pyc
+dbt_internal_packages/
+dashboard/.venv/
+
+# vendored NVIDIA auto-ontology stack: 120MB upstream checkout with its own
+# .git and the deployment secrets (.env). Excluded from the repo entirely;
+# see dashboard/README.md for the semantic-layer setup it provides.
+auto-ontology/
+
+# secrets (defense in depth — nothing should ever match, but never commit)
+.env
+*.env
+!.env.example
+
+# dbt build artifacts
+target/
+logs/
+dbt_packages/
+
+# model rollback artifact (regenerable via model/export)
+.auto-ontology-backups/
+
+# zcode session artifacts
+.zcode/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

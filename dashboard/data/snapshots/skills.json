@@ -1,0 +1,47 @@
+{
+ "question": "Which 10 skills appear most frequently in job postings?",
+ "sql": "SELECT skill, job_count FROM tech_job_market.jobmarket.gold_skills_frequency ORDER BY job_count DESC, skill ASC LIMIT 10;",
+ "rows": [
+  {
+   "skill": "react",
+   "job_count": 5841
+  },
+  {
+   "skill": "python",
+   "job_count": 4538
+  },
+  {
+   "skill": "typescript",
+   "job_count": 3944
+  },
+  {
+   "skill": "aws",
+   "job_count": 3726
+  },
+  {
+   "skill": "node",
+   "job_count": 1923
+  },
+  {
+   "skill": "postgres",
+   "job_count": 1902
+  },
+  {
+   "skill": "devops",
+   "job_count": 1870
+  },
+  {
+   "skill": "kubernetes",
+   "job_count": 1728
+  },
+  {
+   "skill": "javascript",
+   "job_count": 1661
+  },
+  {
+   "skill": "docker",
+   "job_count": 1358
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

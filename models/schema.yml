@@ -1,0 +1,301 @@
+version: 2
+
+models:
+  - name: stg_jobs
+    description: "Staging view on the raw jobs table (bronze source of truth). Never modified."
+    columns:
+      - name: id
+        description: "Primary key from bronze jobs table"
+        tests:
+          - not_null
+          - unique
+      - name: thread_id
+        description: "Hacker News thread ID"
+        tests:
+          - not_null
+      - name: comment_id
+        description: "Hacker News comment ID"
+      - name: company
+        description: "Company name (raw from bronze)"
+      - name: job_title
+        description: "Job title (raw from bronze)"
+      - name: raw_text
+        description: "Original raw posting text"
+        tests:
+          - not_null
+      - name: location
+        description: "Job location (raw from bronze)"
+      - name: remote_policy
+        description: "Remote work policy (raw from bronze)"
+      - name: salary_min
+        description: "Minimum salary"
+      - name: salary_max
+        description: "Maximum salary"
+      - name: salary_currency
+        description: "Salary currency"
+      - name: seniority
+        description: "Seniority level (raw from bronze)"
+      - name: skills
+        description: "Skills array (raw from bronze)"
+      - name: posted_at
+        description: "Job posting timestamp"
+      - name: fetched_at
+        description: "When the record was fetched"
+
+  - name: stg_hn_threads
+    description: "Staging view on the hn_threads table"
+    columns:
+      - name: id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_excluded_comments
+    description: "Staging view on the excluded_comments table"
+    columns:
+      - name: id
+        description: "Primary key"
+        tests:
+          - not_null
+          - unique
+
+  - name: jobs_silver
+    description: >
+      Silver layer: cleaned, standardized, deduplicated jobs data.
+      Derived from stg_jobs (bronze). Cleaning rules:
+      - Rows where both company AND job_title are empty are removed
+      - Whitespace trimmed on all text fields
+      - remote_policy_std: ~97 raw variants standardized to 16 canonical combinations
+      - seniority_std: ~251 raw variants standardized to 167 canonical combinations
+      - Deduplicated by (company, job_title, location), keeping latest posted_at
+      - skills_std: lowercase, trimmed, deduplicated, sorted skills array
+    columns:
+      - name: _source_bronze_id
+        description: "Foreign key back to stg_jobs.id for traceability"
+        tests:
+          - not_null
+      - name: thread_id
+        description: "Hacker News thread ID"
+        tests:
+          - not_null
+      - name: comment_id
+        description: "Hacker News comment ID"
+      - name: company
+        description: "Standardized company name (trimmed)"
+      - name: job_title
+        description: "Standardized job title (trimmed)"
+      - name: raw_text
+        description: "Original raw posting text"
+        tests:
+          - not_null
+      - name: location
+        description: "Standardized location (trimmed)"
+      - name: remote_policy_original
+        description: "Raw remote policy value from bronze"
+      - name: remote_policy_std
+        description: "Standardized remote policy (Remote/Onsite/Hybrid/Anywhere/Unknown, multi-value combos)"
+      - name: salary_min
+        description: "Minimum salary"
+      - name: salary_max
+        description: "Maximum salary"
+      - name: salary_currency
+        description: "Salary currency (trimmed)"
+      - name: seniority_original
+        description: "Raw seniority value from bronze"
+      - name: seniority_std
+        description: "Standardized seniority (Intern/Entry/Junior/Mid/Senior/Lead/Manager/Director/Staff/Principal/Unknown, multi-value combos)"
+      - name: skills
+        description: "Original skills array from bronze"
+      - name: skills_std
+        description: "Standardized skills (lowercase, trimmed, deduplicated, sorted)"
+      - name: posted_at
+        description: "Job posting timestamp"
+      - name: fetched_at
+        description: "When the record was fetched"
+      - name: is_deduped
+        description: "true if this row was kept as a duplicate survivor"
+      - name: _cleaned_at
+        description: "When the silver row was created"
+
+  - name: gold_jobs_by_company
+    description: "Gold mart: job counts and salary statistics by company"
+    columns:
+      - name: company
+        description: "Company name"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs at this company"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+      - name: jobs_with_salary
+        description: "Number of jobs with salary data"
+
+  - name: gold_jobs_by_location
+    description: "Gold mart: job counts and salary statistics by location"
+    columns:
+      - name: location
+        description: "Job location"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs in this location"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+
+  - name: gold_jobs_by_remote_policy
+    description: "Gold mart: job counts and salary statistics by standardized remote policy"
+    columns:
+      - name: remote_policy_std
+        description: "Standardized remote work policy"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs with this policy"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+      - name: jobs_with_salary
+        description: "Number of jobs with salary data"
+
+  - name: gold_jobs_by_seniority
+    description: "Gold mart: job counts and salary statistics by standardized seniority"
+    columns:
+      - name: seniority_std
+        description: "Standardized seniority level"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs at this seniority"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+
+  - name: gold_jobs_over_time
+    description: "Gold mart: monthly job posting trends"
+    columns:
+      - name: month
+        description: "Month of posting (first day of month)"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs posted in this month"
+      - name: jobs_with_salary
+        description: "Number of jobs with salary data"
+
+  - name: gold_salary_summary
+    description: "Gold mart: overall salary summary statistics"
+    columns:
+      - name: total_jobs
+        description: "Total number of jobs"
+      - name: jobs_with_salary
+        description: "Number of jobs with salary data"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+      - name: min_salary_min
+        description: "Lowest observed minimum salary"
+      - name: max_salary_max
+        description: "Highest observed maximum salary"
+
+  - name: gold_skills_frequency
+    description: "Gold mart: unique skill frequency distribution"
+    columns:
+      - name: skill
+        description: "Standardized skill name (lowercase)"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs requiring this skill"
+      - name: pct_of_jobs_with_skills
+        description: "Percentage of jobs with skills that require this skill"
+
+  - name: gold_skill_cooccurrence
+    description: "Gold mart: skill pairs that appear together in job postings"
+    columns:
+      - name: skill_a
+        description: "First skill (alphabetically before skill_b)"
+        tests:
+          - not_null
+      - name: skill_b
+        description: "Second skill"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs requiring both skills"
+      - name: pct_of_multi_skill_jobs
+        description: "Percentage of multi-skill jobs containing this pair"
+
+  - name: gold_skill_salary
+    description: "Gold mart: salary statistics by individual skill"
+    columns:
+      - name: skill
+        description: "Standardized skill name (lowercase)"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs mentioning this skill with salary data"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+      - name: min_salary_min
+        description: "Lowest observed minimum salary"
+      - name: max_salary_max
+        description: "Highest observed maximum salary"
+
+  - name: gold_skill_by_seniority
+    description: "Gold mart: top skills broken down by seniority level"
+    columns:
+      - name: seniority_std
+        description: "Standardized seniority level"
+        tests:
+          - not_null
+      - name: skill
+        description: "Standardized skill name (lowercase)"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs at this seniority requiring this skill"
+      - name: pct_of_seniority_jobs
+        description: "Percentage of jobs at this seniority level requiring this skill"
+
+  - name: gold_remote_policy_analysis
+    description: "Gold mart: remote policy deep-dive analysis"
+    columns:
+      - name: remote_policy_std
+        description: "Standardized remote work policy"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs with this policy"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+      - name: jobs_with_salary
+        description: "Number of jobs with salary data"
+
+  - name: gold_seniority_analysis
+    description: "Gold mart: seniority deep-dive analysis"
+    columns:
+      - name: seniority_std
+        description: "Standardized seniority level"
+        tests:
+          - not_null
+      - name: job_count
+        description: "Number of jobs at this seniority"
+      - name: avg_salary_min
+        description: "Average minimum salary"
+      - name: avg_salary_max
+        description: "Average maximum salary"
+      - name: jobs_with_salary
+        description: "Number of jobs with salary data"

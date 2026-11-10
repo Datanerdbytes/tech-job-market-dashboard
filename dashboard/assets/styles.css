@@ -1,0 +1,34 @@
+/* Foxstocks-style page canvas: lavender backdrop behind white cards */
+body {
+    background: #ECE9FB;
+}
+html[data-mantine-color-scheme="dark"] body {
+    background: #16171B;
+}
+
+/* Mantine Paper cards pick up the border color; soften on the lavender bg */
+html[data-mantine-color-scheme="light"] [data-mantine-component="Paper"] {
+    --paper-bg: #FFFFFF;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Provenance jump: flash the targeted Data Notes card */
+@keyframes note-flash {
+    0% { box-shadow: 0 0 0 3px var(--mantine-color-brand-5); background: var(--mantine-color-brand-0); }
+    70% { box-shadow: 0 0 0 3px var(--mantine-color-brand-5); background: var(--mantine-color-brand-0); }
+    100% { box-shadow: none; background: transparent; }
+}
+html[data-mantine-color-scheme="dark"] .note-flash {
+    animation: note-flash-dark 2.4s ease;
+}
+@keyframes note-flash-dark {
+    0% { box-shadow: 0 0 0 3px var(--mantine-color-brand-7); background: var(--mantine-color-dark-6); }
+    70% { box-shadow: 0 0 0 3px var(--mantine-color-brand-7); background: var(--mantine-color-dark-6); }
+    100% { box-shadow: none; background: transparent; }
+}
+html[data-mantine-color-scheme="light"] .note-flash {
+    animation: note-flash 2.4s ease;
+}

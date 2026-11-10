@@ -1,0 +1,10 @@
+{
+ "question": "How many job postings are there in total?",
+ "sql": "SELECT COUNT(id) FROM tech_job_market.jobmarket.jobs",
+ "rows": [
+  {
+   "count": 33392
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

@@ -1,0 +1,47 @@
+{
+ "question": "Which 10 locations have the most job postings?",
+ "sql": "SELECT location, COUNT(id) AS job_count FROM tech_job_market.jobmarket.jobs GROUP BY location ORDER BY job_count DESC LIMIT 10;",
+ "rows": [
+  {
+   "location": "Remote",
+   "job_count": 4308
+  },
+  {
+   "location": null,
+   "job_count": 3332
+  },
+  {
+   "location": "REMOTE",
+   "job_count": 2589
+  },
+  {
+   "location": "San Francisco",
+   "job_count": 473
+  },
+  {
+   "location": "Remote (US)",
+   "job_count": 465
+  },
+  {
+   "location": "San Francisco, CA",
+   "job_count": 442
+  },
+  {
+   "location": "London, UK",
+   "job_count": 358
+  },
+  {
+   "location": "ONSITE",
+   "job_count": 328
+  },
+  {
+   "location": "REMOTE (US)",
+   "job_count": 282
+  },
+  {
+   "location": "Berlin, Germany",
+   "job_count": 256
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

@@ -1,0 +1,47 @@
+{
+ "question": "Which 10 skills have the highest average maximum salary?",
+ "sql": "SELECT skill, avg_salary_max FROM tech_job_market.jobmarket.gold_skill_salary ORDER BY avg_salary_max DESC LIMIT 10;",
+ "rows": [
+  {
+   "skill": "databricks",
+   "avg_salary_max": 229000.0
+  },
+  {
+   "skill": "kotlin",
+   "avg_salary_max": 228518.87
+  },
+  {
+   "skill": "pytorch",
+   "avg_salary_max": 225795.58
+  },
+  {
+   "skill": "snowflake",
+   "avg_salary_max": 219279.2
+  },
+  {
+   "skill": "numpy",
+   "avg_salary_max": 215400.0
+  },
+  {
+   "skill": "rust",
+   "avg_salary_max": 214589.02
+  },
+  {
+   "skill": "tensorflow",
+   "avg_salary_max": 209614.0
+  },
+  {
+   "skill": "kafka",
+   "avg_salary_max": 202608.33
+  },
+  {
+   "skill": "nlp",
+   "avg_salary_max": 200488.52
+  },
+  {
+   "skill": "fastapi",
+   "avg_salary_max": 197583.61
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

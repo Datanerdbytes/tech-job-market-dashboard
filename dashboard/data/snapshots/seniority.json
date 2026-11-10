@@ -1,0 +1,842 @@
+{
+ "question": "What are the average minimum and maximum salaries for each seniority level?",
+ "sql": "SELECT seniority_std, avg_salary_min, avg_salary_max FROM tech_job_market.jobmarket.gold_jobs_by_seniority ORDER BY seniority_std;",
+ "rows": [
+  {
+   "seniority_std": "Director",
+   "avg_salary_min": 149533.33,
+   "avg_salary_max": 191866.67
+  },
+  {
+   "seniority_std": "Director; Entry; Junior; Manager; Mid; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Entry; Lead",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Entry; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Entry; Staff",
+   "avg_salary_min": 80000.0,
+   "avg_salary_max": 95000.0
+  },
+  {
+   "seniority_std": "Director; Intern",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Intern; Lead; Manager; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Intern; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Intern; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Junior",
+   "avg_salary_min": 120000.0,
+   "avg_salary_max": 180000.0
+  },
+  {
+   "seniority_std": "Director; Junior; Lead",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Junior; Lead; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Junior; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Junior; Senior",
+   "avg_salary_min": 120000.0,
+   "avg_salary_max": 120000.0
+  },
+  {
+   "seniority_std": "Director; Junior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead",
+   "avg_salary_min": 165000.0,
+   "avg_salary_max": 185000.0
+  },
+  {
+   "seniority_std": "Director; Lead; Manager",
+   "avg_salary_min": 200000.0,
+   "avg_salary_max": 230000.0
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Principal; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Manager; Senior; Staff",
+   "avg_salary_min": 153000.0,
+   "avg_salary_max": 171000.0
+  },
+  {
+   "seniority_std": "Director; Lead; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Principal; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Senior",
+   "avg_salary_min": 169766.67,
+   "avg_salary_max": 217500.0
+  },
+  {
+   "seniority_std": "Director; Lead; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Lead; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager",
+   "avg_salary_min": 135000.0,
+   "avg_salary_max": 167500.0
+  },
+  {
+   "seniority_std": "Director; Manager; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Mid; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Principal; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Senior",
+   "avg_salary_min": 138252.88,
+   "avg_salary_max": 181879.25
+  },
+  {
+   "seniority_std": "Director; Manager; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Manager; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Principal; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Senior",
+   "avg_salary_min": 136166.67,
+   "avg_salary_max": 174600.0
+  },
+  {
+   "seniority_std": "Director; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Director; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry",
+   "avg_salary_min": 103800.0,
+   "avg_salary_max": 141000.0
+  },
+  {
+   "seniority_std": "Entry; Intern",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Intern; Lead",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Intern; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Junior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Junior; Lead",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Junior; Lead; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Junior; Manager",
+   "avg_salary_min": 110000.0,
+   "avg_salary_max": 160000.0
+  },
+  {
+   "seniority_std": "Entry; Junior; Manager; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Junior; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Junior; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Lead",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Lead; Manager",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Lead; Manager; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Lead; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Manager",
+   "avg_salary_min": 215000.0,
+   "avg_salary_max": 235000.0
+  },
+  {
+   "seniority_std": "Entry; Manager; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Manager; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Mid; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Entry; Senior",
+   "avg_salary_min": 100000.0,
+   "avg_salary_max": 135000.0
+  },
+  {
+   "seniority_std": "Entry; Staff",
+   "avg_salary_min": 12000.0,
+   "avg_salary_max": 12000.0
+  },
+  {
+   "seniority_std": "Intern",
+   "avg_salary_min": 118250.0,
+   "avg_salary_max": 222250.0
+  },
+  {
+   "seniority_std": "Intern; Junior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Junior; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Junior; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Junior; Mid; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Junior; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Lead",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Lead; Manager",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Lead; Senior",
+   "avg_salary_min": 30.0,
+   "avg_salary_max": 40.0
+  },
+  {
+   "seniority_std": "Intern; Lead; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Manager",
+   "avg_salary_min": 4000.0,
+   "avg_salary_max": 6000.0
+  },
+  {
+   "seniority_std": "Intern; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Mid; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Intern; Senior",
+   "avg_salary_min": 75000.0,
+   "avg_salary_max": 220000.0
+  },
+  {
+   "seniority_std": "Intern; Staff",
+   "avg_salary_min": 200000.0,
+   "avg_salary_max": 325000.0
+  },
+  {
+   "seniority_std": "Junior",
+   "avg_salary_min": 114200.0,
+   "avg_salary_max": 154250.0
+  },
+  {
+   "seniority_std": "Junior; Lead",
+   "avg_salary_min": 142500.0,
+   "avg_salary_max": 182500.0
+  },
+  {
+   "seniority_std": "Junior; Lead; Manager",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Manager; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Manager; Mid; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Manager; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Manager; Principal; Senior; Staff",
+   "avg_salary_min": 192000.0,
+   "avg_salary_max": 261000.0
+  },
+  {
+   "seniority_std": "Junior; Lead; Manager; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Mid; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Lead; Senior",
+   "avg_salary_min": 163833.33,
+   "avg_salary_max": 207500.0
+  },
+  {
+   "seniority_std": "Junior; Lead; Senior; Staff",
+   "avg_salary_min": 155000.0,
+   "avg_salary_max": 187500.0
+  },
+  {
+   "seniority_std": "Junior; Manager",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Manager; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Manager; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Manager; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Manager; Senior",
+   "avg_salary_min": 130000.0,
+   "avg_salary_max": 130000.0
+  },
+  {
+   "seniority_std": "Junior; Manager; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Manager; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Mid",
+   "avg_salary_min": 70000.0,
+   "avg_salary_max": 97500.0
+  },
+  {
+   "seniority_std": "Junior; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Mid; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Principal",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Principal; Senior",
+   "avg_salary_min": 70000.0,
+   "avg_salary_max": 100000.0
+  },
+  {
+   "seniority_std": "Junior; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Junior; Senior",
+   "avg_salary_min": 110875.0,
+   "avg_salary_max": 205468.75
+  },
+  {
+   "seniority_std": "Junior; Senior; Staff",
+   "avg_salary_min": 140000.0,
+   "avg_salary_max": 270000.0
+  },
+  {
+   "seniority_std": "Junior; Staff",
+   "avg_salary_min": 73333.33,
+   "avg_salary_max": 93333.33
+  },
+  {
+   "seniority_std": "Lead",
+   "avg_salary_min": 126247.87,
+   "avg_salary_max": 166236.19
+  },
+  {
+   "seniority_std": "Lead; Manager",
+   "avg_salary_min": 154827.64,
+   "avg_salary_max": 180845.82
+  },
+  {
+   "seniority_std": "Lead; Manager; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Manager; Mid; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Manager; Mid; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Manager; Principal",
+   "avg_salary_min": 289000.0,
+   "avg_salary_max": 338000.0
+  },
+  {
+   "seniority_std": "Lead; Manager; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Manager; Principal; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Manager; Principal; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Manager; Senior",
+   "avg_salary_min": 168496.3,
+   "avg_salary_max": 226096.3
+  },
+  {
+   "seniority_std": "Lead; Manager; Senior; Staff",
+   "avg_salary_min": 279428.57,
+   "avg_salary_max": 361285.71
+  },
+  {
+   "seniority_std": "Lead; Manager; Staff",
+   "avg_salary_min": 167500.0,
+   "avg_salary_max": 250000.0
+  },
+  {
+   "seniority_std": "Lead; Mid",
+   "avg_salary_min": 120000.0,
+   "avg_salary_max": 180000.0
+  },
+  {
+   "seniority_std": "Lead; Mid; Senior",
+   "avg_salary_min": 85000.0,
+   "avg_salary_max": 105000.0
+  },
+  {
+   "seniority_std": "Lead; Mid; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Lead; Principal",
+   "avg_salary_min": 161666.67,
+   "avg_salary_max": 200833.33
+  },
+  {
+   "seniority_std": "Lead; Principal; Senior",
+   "avg_salary_min": 185000.0,
+   "avg_salary_max": 220000.0
+  },
+  {
+   "seniority_std": "Lead; Principal; Senior; Staff",
+   "avg_salary_min": 142723.0,
+   "avg_salary_max": 172723.0
+  },
+  {
+   "seniority_std": "Lead; Principal; Staff",
+   "avg_salary_min": 170000.0,
+   "avg_salary_max": 200000.0
+  },
+  {
+   "seniority_std": "Lead; Senior",
+   "avg_salary_min": 143362.05,
+   "avg_salary_max": 188214.0
+  },
+  {
+   "seniority_std": "Lead; Senior; Staff",
+   "avg_salary_min": 139173.33,
+   "avg_salary_max": 210483.33
+  },
+  {
+   "seniority_std": "Lead; Staff",
+   "avg_salary_min": 174166.67,
+   "avg_salary_max": 212333.33
+  },
+  {
+   "seniority_std": "Manager",
+   "avg_salary_min": 125308.82,
+   "avg_salary_max": 169485.29
+  },
+  {
+   "seniority_std": "Manager; Mid",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Manager; Mid; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Manager; Mid; Senior",
+   "avg_salary_min": 156666.67,
+   "avg_salary_max": 221333.33
+  },
+  {
+   "seniority_std": "Manager; Mid; Senior; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Manager; Principal",
+   "avg_salary_min": 152500.0,
+   "avg_salary_max": 213500.0
+  },
+  {
+   "seniority_std": "Manager; Principal; Senior",
+   "avg_salary_min": 98000.0,
+   "avg_salary_max": 128000.0
+  },
+  {
+   "seniority_std": "Manager; Principal; Senior; Staff",
+   "avg_salary_min": 168000.0,
+   "avg_salary_max": 254000.0
+  },
+  {
+   "seniority_std": "Manager; Principal; Staff",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Manager; Senior",
+   "avg_salary_min": 145197.61,
+   "avg_salary_max": 186491.52
+  },
+  {
+   "seniority_std": "Manager; Senior; Staff",
+   "avg_salary_min": 181428.57,
+   "avg_salary_max": 242142.86
+  },
+  {
+   "seniority_std": "Manager; Staff",
+   "avg_salary_min": 157500.0,
+   "avg_salary_max": 196250.0
+  },
+  {
+   "seniority_std": "Mid",
+   "avg_salary_min": 131385.0,
+   "avg_salary_max": 193185.0
+  },
+  {
+   "seniority_std": "Mid; Principal; Senior",
+   "avg_salary_min": null,
+   "avg_salary_max": null
+  },
+  {
+   "seniority_std": "Mid; Senior",
+   "avg_salary_min": 111631.58,
+   "avg_salary_max": 158105.26
+  },
+  {
+   "seniority_std": "Mid; Senior; Staff",
+   "avg_salary_min": 80000.0,
+   "avg_salary_max": 132250.0
+  },
+  {
+   "seniority_std": "Mid; Staff",
+   "avg_salary_min": 300000.0,
+   "avg_salary_max": 450000.0
+  },
+  {
+   "seniority_std": "Principal",
+   "avg_salary_min": 151000.0,
+   "avg_salary_max": 203769.23
+  },
+  {
+   "seniority_std": "Principal; Senior",
+   "avg_salary_min": 179565.22,
+   "avg_salary_max": 242608.7
+  },
+  {
+   "seniority_std": "Principal; Senior; Staff",
+   "avg_salary_min": 181428.57,
+   "avg_salary_max": 256571.43
+  },
+  {
+   "seniority_std": "Principal; Staff",
+   "avg_salary_min": 169683.33,
+   "avg_salary_max": 193683.33
+  },
+  {
+   "seniority_std": "Senior",
+   "avg_salary_min": 135792.7,
+   "avg_salary_max": 179336.61
+  },
+  {
+   "seniority_std": "Senior; Staff",
+   "avg_salary_min": 158421.36,
+   "avg_salary_max": 215347.9
+  },
+  {
+   "seniority_std": "Staff",
+   "avg_salary_min": 167853.39,
+   "avg_salary_max": 229276.89
+  },
+  {
+   "seniority_std": "Unknown",
+   "avg_salary_min": 121818.97,
+   "avg_salary_max": 171306.65
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

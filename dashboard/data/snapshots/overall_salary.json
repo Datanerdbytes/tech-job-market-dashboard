@@ -1,0 +1,14 @@
+{
+ "question": "What are the overall average, lowest, and highest salaries across job postings?",
+ "sql": "SELECT avg_salary_min, min_salary_min, max_salary_max FROM tech_job_market.jobmarket.gold_salary_summary",
+ "rows": [
+  {
+   "avg_salary_min": 134601.04,
+   "min_salary_min": 5.0,
+   "max_salary_max": 900000.0,
+   "avg_salary_max": 182784.78
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z",
+ "note": "avg_salary_max sourced from certified gold_salary_summary catalog sample"
+}

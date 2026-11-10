@@ -1,0 +1,47 @@
+{
+ "question": "Which 10 companies have the most job postings?",
+ "sql": "SELECT company, COUNT(id) AS job_count FROM tech_job_market.jobmarket.jobs WHERE company IS NOT NULL AND company != '' GROUP BY company ORDER BY job_count DESC LIMIT 10;",
+ "rows": [
+  {
+   "company": "ML6",
+   "job_count": 72
+  },
+  {
+   "company": "Spacelift",
+   "job_count": 69
+  },
+  {
+   "company": "Uncountable",
+   "job_count": 68
+  },
+  {
+   "company": "SerpApi",
+   "job_count": 68
+  },
+  {
+   "company": "Temporal Technologies",
+   "job_count": 65
+  },
+  {
+   "company": "Aha!",
+   "job_count": 64
+  },
+  {
+   "company": "MixRank (YC S11)",
+   "job_count": 59
+  },
+  {
+   "company": "PostHog",
+   "job_count": 55
+  },
+  {
+   "company": "Interactive Brokers",
+   "job_count": 50
+  },
+  {
+   "company": "Stream",
+   "job_count": 50
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

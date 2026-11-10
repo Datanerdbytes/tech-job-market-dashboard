@@ -1,0 +1,24 @@
+[project]
+name = "tech-job-market-dashboard"
+version = "0.1.0"
+description = "Tech job market insights dashboard — Dash + Dash Mantine Components, data via the Auto-Ontology semantic layer"
+requires-python = ">=3.12"
+dependencies = [
+    "dash>=3.0",
+    "dash-mantine-components>=2.0",
+    "dash-iconify>=0.1.2",
+    "plotly>=6.0",
+    "pandas>=2.3",
+    "requests>=2.32",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# Same focused rule set as the auto-ontology upstream project.
+select = ["E4", "E7", "E9", "F"]

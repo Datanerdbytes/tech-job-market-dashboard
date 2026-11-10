@@ -1,0 +1,71 @@
+{
+ "question": "Break down the number of job postings by remote work policy.",
+ "sql": "SELECT remote_policy_std, job_count FROM tech_job_market.jobmarket.gold_jobs_by_remote_policy ORDER BY remote_policy_std;",
+ "rows": [
+  {
+   "remote_policy_std": "Anywhere",
+   "job_count": 18
+  },
+  {
+   "remote_policy_std": "Anywhere; Hybrid",
+   "job_count": 5
+  },
+  {
+   "remote_policy_std": "Anywhere; Hybrid; Onsite",
+   "job_count": 1
+  },
+  {
+   "remote_policy_std": "Anywhere; Hybrid; Onsite; Remote",
+   "job_count": 6
+  },
+  {
+   "remote_policy_std": "Anywhere; Hybrid; Remote",
+   "job_count": 14
+  },
+  {
+   "remote_policy_std": "Anywhere; Onsite",
+   "job_count": 25
+  },
+  {
+   "remote_policy_std": "Anywhere; Onsite; Remote",
+   "job_count": 32
+  },
+  {
+   "remote_policy_std": "Anywhere; Remote",
+   "job_count": 459
+  },
+  {
+   "remote_policy_std": "Hybrid",
+   "job_count": 762
+  },
+  {
+   "remote_policy_std": "Hybrid; Onsite",
+   "job_count": 556
+  },
+  {
+   "remote_policy_std": "Hybrid; Onsite; Remote",
+   "job_count": 261
+  },
+  {
+   "remote_policy_std": "Hybrid; Remote",
+   "job_count": 666
+  },
+  {
+   "remote_policy_std": "Onsite",
+   "job_count": 3073
+  },
+  {
+   "remote_policy_std": "Onsite; Remote",
+   "job_count": 2314
+  },
+  {
+   "remote_policy_std": "Remote",
+   "job_count": 11423
+  },
+  {
+   "remote_policy_std": "Unknown",
+   "job_count": 1695
+  }
+ ],
+ "updated_at": "2026-11-10T03:00:00Z"
+}

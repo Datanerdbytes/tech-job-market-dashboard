@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dashboard
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Lint
+        run: uvx ruff@0.13.0 check .
+
+      - name: Smoke test (production mode, debug + MCP off)
+        env:
+          DASH_MCP: "0"
+          DASH_DEBUG: "0"
+        run: |
+          uv run python - << 'PY'
+          from app import server
+
+          client = server.test_client()
+          for path in ["/", "/skills", "/companies", "/notes", "/assets/styles.css"]:
+              resp = client.get(path)
+              assert resp.status_code == 200, f"{path} -> {resp.status_code}"
+          print("smoke test OK: all pages and assets return 200")
+          PY
